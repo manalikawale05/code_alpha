@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mast Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <h1 class="title">🌟 Stunning Image Gallery 🌟</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('animals')">Animals</button>
+  </div>
+
+  <!-- Image Gallery Grid -->
+  <div class="gallery">
+    <div class="image nature"><img src="https://tse4.mm.bing.net/th/id/OIP.36d0gb5RiQl3G13VFVSbyAHaEK?pid=Api&P=0&h=180" alt="Nature" onclick="openLightbox(this)" /></div>
+    <div class="image city"><img src="https://up.yimg.com/ib/th/id/OIP.iHnjygMx3XDuxQbsAQfdoQHaE8?pid=Api&rs=1&c=1&qlt=95&w=159&h=106" alt="City" onclick="openLightbox(this)" /></div>
+    <div class="image animals"><img src="https://up.yimg.com/ib/th/id/OIP.JoxaiKhpKnS1WPB6l-GOEQHaEK?pid=Api&rs=1&c=1&qlt=95&w=215&h=120" alt="Animal" onclick="openLightbox(this)" /></div>
+    <div class="image nature"><img src="https://tse3.mm.bing.net/th/id/OIP.hJIdXeduZW8ovhQqvHEJhwHaFj?pid=Api&P=0&h=180" alt="Nature" onclick="openLightbox(this)" /></div>
+    <div class="image city"><img src="https://tse1.mm.bing.net/th/id/OIP.smGmbUIpZO7w8O_aB1qOCgHaEo?pid=Api&P=0&h=180" alt="City" onclick="openLightbox(this)" /></div>
+    <div class="image animals"><img src="https://up.yimg.com/ib/th/id/OIP.V4wA_t2z1VXgqiuTegP7CgHaEK?pid=Api&rs=1&c=1&qlt=95&w=215&h=120" alt="Animal" onclick="openLightbox(this)" /></div>
+
+    <div class="image nature"><img src="https://tse2.mm.bing.net/th/id/OIP.rkoZZyGKiywR1xd-WW3jbAHaEO?pid=Api&P=0&h=180" alt="Nature" onclick="openLightbox(this)" /></div>
+    <div class="image city"><img src="https://tse1.mm.bing.net/th/id/OIP.9-mMAiY9gFRZVYvLu8t1dAHaEo?pid=Api&P=0&h=180" alt="City" onclick="openLightbox(this)" /></div>
+    <div class="image animals"><img src="https://tse4.mm.bing.net/th/id/OIP.PsOrpvjZnUCcrdxKKvbVXAHaEo?pid=Api&P=0&h=180" alt="Animal" onclick="openLightbox(this)" /></div>
+    <div class="image nature"><img src="https://tse4.mm.bing.net/th/id/OIP.IBqw83F6Nl5fvYPKErhkHAHaEo?pid=Api&P=0&h=180" alt="Nature" onclick="openLightbox(this)" /></div>
+    <div class="image city"><img src="https://tse4.mm.bing.net/th/id/OIP.-j2hoXuoi6kTQORx1tm6ugHaEK?pid=Api&P=0&h=180" alt="City" onclick="openLightbox(this)" /></div>
+    <div class="image animals"><img src="https://tse4.mm.bing.net/th/id/OIP.Cws2L3RRwGAE51SI3cIVpAHaEo?pid=Api&P=0&h=180" alt="Animal" onclick="openLightbox(this)" /></div>
+
+
+     <div class="image nature"><img src="https://tse4.mm.bing.net/th/id/OIP.nJrJDHlLptRXNE6mHT9LGAHaE8?pid=Api&P=0&h=180" alt="Nature" onclick="openLightbox(this)" /></div>
+    <div class="image city"><img src="https://tse1.mm.bing.net/th/id/OIP.Xnry9bPQ9u6-9HOIzJmragHaEP?pid=Api&P=0&h=180" alt="City" onclick="openLightbox(this)" /></div>
+    <div class="image animals"><img src="https://tse3.mm.bing.net/th/id/OIP.QghJfUlTwSWzfSNZIeovMwHaEh?pid=Api&P=0&h=180" alt="Animal" onclick="openLightbox(this)" /></div>
+    <div class="image nature"><img src="https://tse4.mm.bing.net/th/id/OIP.rj0vSIDqyhK-fITi0sVgQQHaEK?pid=Api&P=0&h=180" alt="Nature" onclick="openLightbox(this)" /></div>
+    <div class="image city"><img src="https://tse2.mm.bing.net/th/id/OIP.360Naisp56yIJ4k8spr7pgHaE8?pid=Api&P=0&h=180" alt="City" onclick="openLightbox(this)" /></div>
+    <div class="image animals"><img src="https://tse3.mm.bing.net/th/id/OIP.WpRmFAMvZIWjJQW3TGSktgHaEo?pid=Api&P=0&h=180" alt="Animal" onclick="openLightbox(this)" /></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+    <a class="prev" onclick="changeImage(-1)">❮</a>
+    <a class="next" onclick="changeImage(1)">❯</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
